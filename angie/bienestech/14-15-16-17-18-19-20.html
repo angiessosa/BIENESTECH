@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres de Hoy</title>
+    <link href="css/estilosgeneral.css" rel="stylesheet">
+    <link href="css/agendartaller.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#" class="active">Talleres</a></li>
+                <li class="dropdown">
+                    <a href="#">Gestión</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Fichas</a></li>
+                        <li><a href="#">Profesionales</a></li>
+                        <li><a href="#">Instructores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cuestionario</a></li>
+
+                <li class="user-dropdown">
+                    <a href="#"><img src="img/usuario.png" alt="Usuario"></a>
+                    <ul class="user-dropdown-content">
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Permisos Usuario</a></li>
+                        <li><a href="#">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+
+                <a>
+                    <img src="img/logobienestech.png" class="logobienestech">
+                </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Agendar Taller</h1>
+        <form>
+        <div class="container" id="container">
+            <h3>Centro Formación</h3>
+            <select class="centro-formacion" required>
+                <option value="">Seleccione el Centro de Formación</option>
+                <option value="calle52">Sede Calle 52</option>
+                <option value="calle64">Sede Calle 64</option>
+                <option value="fontibon">Sede Fontibón</option>
+            </select>
+        </div>
+
+        <div class="calendar">
+            <div class="calendar-info">
+                <div class="calentar-prev" id="prev-month">&#9664;</div>
+                <div class="calentar-month" id="month">Julio</div>
+                <div class="calentar-year" id="year">2024</div>
+                <div class="calentar-next" id="next-month">&#9654;</div>
+            </div>
+
+            <div class="calendar-week">
+                <div class="calentar-day calendar-item">Lun</div>
+                <div class="calentar-day calendar-item">Mar</div>
+                <div class="calentar-day calendar-item">Mier</div>
+                <div class="calentar-day calendar-item">Jue</div>
+                <div class="calentar-day calendar-item">Vie</div>
+                <div class="calentar-day calendar-item">Sab</div>
+                <div class="calentar-day calendar-item">Dom</div>
+            </div>
+
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+            </ol>
+
+            <div class="calendar-dates" id="dates"></div>
+        </div>
+
+        <br>
+        <br>
+
+        <h4>Jornada</h4>
+        <div class="shifts" required>
+            <div class="shift">Mañana</div>
+            <div class="shift active">Diurna</div>
+            <div class="shift">Noche</div>
+        </div>
+
+        <br>
+
+        <h4>Coordinación</h4>
+        <div class="container" id="container">
+            <select class="coordinacion" id="coordinacion" required>
+                <option value="">Seleccione Coordinación</option>
+                <option value="teleinformatica">Teleinformática</option>
+                <option value="mercadeo">Mercadeo</option>
+                <option value="logistica">Logística</option>
+            </select>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h4>Ficha</h4>
+        <div class="container" id="container">
+            <select class="coordinacion" id="coordinacion" required>
+                <option value="">Seleccione Ficha</option>
+                <option value="teleinformatica">2898754</option>
+                <option value="mercadeo">2898745</option>
+                <option value="logistica">2470719</option>
+                <option value="logistica">2470718</option>
+            </select>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h4>Hora Disponible</h4>
+        <div class="container" id="container">
+            <select class="coordinacion" id="coordinacion" required>
+                <option value="">Seleccione Hora</option>
+                <option value="teleinformatica">1:00pm</option>
+                <option value="mercadeo">1:30pm</option>
+                <option value="logistica">3:30pm</option>
+            </select>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h4>Tema</h4>
+        <div class="container" id="container">
+            <select class="coordinacion" id="coordinacion" required>
+                <option value="">Seleccione Tema</option>
+                <option value="teleinformatica">Teatro</option>
+                <option value="mercadeo">Teatro - Psico</option>
+                <option value="logistica">Música</option>
+                <option value="logistica">Música - Psico</option>
+                <option value="logistica">Danza</option>
+                <option value="logistica">Danza - Psico</option>
+            </select>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h4>Profesionales Disponibles</h4>
+        <div class="container" id="container">
+            <select class="coordinacion" id="coordinacion" required>
+                <option value="">Seleccione Profesional</option>
+                <option value="teleinformatica">Sebatián Ramirez</option>
+            </select>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        <h4>Observaciones</h4>
+        <div class="container" id="container">
+            <input class="observaciones" type="text">
+        </div>
+
+        <div class="button">
+            <button type="submit" class="submit-btn">Guardar</button>
+        </div>
+
+        </form>
+    </main>
+</body>
+</html>
